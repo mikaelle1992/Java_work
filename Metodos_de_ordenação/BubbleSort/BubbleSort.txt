@@ -1,0 +1,7 @@
+Algoritmos de Ordenação: 
+Os algoritmos de ordenação servem para colocar um conjunto de itens em uma ordem.
+
+Bubble Sort:
+Percorre o vetor inteiro comparando elementos dois a dois,
+trocando as posições dos elementos se eles estiverem fora de ordem.
+Repete os primeiros n-1 itens, depois com os primeiros n-2 itens, até que reste apenas um item.

@@ -1,0 +1,16 @@
+Pilha:
+
+Pilhas são Estrutura de dados que armazenam elementos do mesmo tipo em uma forma 
+sequencial, empilhando um item acima do outro, por exemplo, imagine uma pilha de 
+pratos o primeiro a ser
+empilhado será o ultimo a ser desempilhado e o ultimo a ser empilhado (o topo) será o primeiro 
+a ser desempilhado.
+
+Pilha Dinãmina 
+Cada elemento adicionado terá uma referencia ao próximo elemento, 
+que no caso é o que está no topo antes deste ser adicionado.
+Cada elemento  tem um ponteiro que aponta para o elemento seguinte.
+Não tem limite de tamanho como a estática, basta que cada elemento saiba quem é o próximo
+ultimo elemento aponta para NULL.
+
+

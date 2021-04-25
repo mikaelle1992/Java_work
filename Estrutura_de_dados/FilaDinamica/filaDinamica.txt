@@ -1,0 +1,9 @@
+Fila dinamica:
+Assim como a lista dinamica e pilha dinamica a fila é uma estrutura de dados que armazenam elementos do mesmo tipo em uma sequência
+, tambem com alocação de memoria.
+Porem a fila tem uma restrição de entrada e saída,
+ assim, só podemos retirar o elemento que chegou primeiro (início),
+ e os novos elementos devem ser inseridos no final.
+Para isso é necessario dois ponteiros, um que aponta para o inicio da fila 
+ e um para o final da fila e tambem o ponteiro no elemento que indica para o proximo elemento.
+

@@ -1,0 +1,9 @@
+Lista Dinâmica:
+Estrutura de dados que armazenam elementos do mesmo tipo em uma sequência, cada elemento contém um ponteiro 
+com o endereço do elemento seguinte.
+Lista dinâmica tem a alocação de memoria como um das vantagens, seu tamanho não é fixo 
+assim  podemos inserir e retirar elemento sob demanda.
+Quanto mais elementos adicionado na lista mais memoria é ocupada e quando 
+elemento for retirado sua memoria é liberada.
+O elemento tambem pode ser inserido ou retirado do inicio, fim ou meio da lista.
+

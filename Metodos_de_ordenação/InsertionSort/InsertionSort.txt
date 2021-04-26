@@ -1,0 +1,9 @@
+Insertion sort:
+
+ Metodo que percorre um vetor de elementos da esquerda para a direita
+ e a medida que avança vai ordenando os elementos à esquerda.
+Funciona da mesma forma que pessoas usam para ordenar cartas de baralho ,
+pega uma carta de cada vez que é inserida em  seu devido lugar.
+Ele percorre todo o vetor e para cadaposição  ele verifica se está
+na posição correta em uma única vez, utilizando um laço dentro de outro.
+

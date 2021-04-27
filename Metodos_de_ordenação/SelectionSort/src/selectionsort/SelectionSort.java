@@ -33,9 +33,9 @@ public class SelectionSort {
             }
             
         }
-
+        System.out.println("Ordenado");
           for(int i = 0;i< vetor.length;i++){
-            System.out.println("valores ordenado : " + vetor[i]);
+            System.out.println("valor : " + vetor[i]);
      }
         
     }

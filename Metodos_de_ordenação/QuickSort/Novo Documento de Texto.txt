@@ -1,0 +1,8 @@
+QuickSort:
+
+O QuichSort usa o metodo divisão e conquista  para resolver o problema.
+Dividir o conjunto de elemento em partes menos , escolhe um elemento que o chamarmos 
+ de pivô para reorganizar os elementos a partir dele. Passando casa por casa
+e verificar se o elemento for menor ou igual ao pivô ele vai para esquerda
+, se o elemento for maior que o pivô vai para a direita. 
+Fazendo isso ate que todo o conjunto esteja em ordem.

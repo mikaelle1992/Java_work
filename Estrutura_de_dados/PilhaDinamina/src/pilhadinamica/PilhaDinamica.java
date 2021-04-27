@@ -61,6 +61,7 @@ public class PilhaDinamica {
         int num;
         Scanner tec = new Scanner(System.in);     
         
+       
       System.out.println("Pilha:");
    
         do{

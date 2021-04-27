@@ -36,7 +36,7 @@ public class SelectionSort {
 
           for(int i = 0;i< vetor.length;i++){
             System.out.println("valores ordenado : " + vetor[i]);
-         }
+     }
         
     }
     

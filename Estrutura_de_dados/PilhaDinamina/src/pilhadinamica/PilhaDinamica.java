@@ -91,7 +91,7 @@ public class PilhaDinamica {
             res = tec.next();
         }while(res.equals("s"));
          
-        System.out.println("FIM");
+        System.out.println("FIM DO PROGRAMA!");
         
         
     }

@@ -28,8 +28,9 @@ public class InsertionSort {
             v[j + 1] = aux;
         }
 
+            System.out.println("Ordenado:");
         for (int i = 0; i < v.length; i++) {
-            System.out.println("valores ordenado : " + v[i]);
+            System.out.println("valor : " + v[i]);
 
         }
 

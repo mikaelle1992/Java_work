@@ -46,18 +46,18 @@ public class QuickSort {
         System.out.print("Tamanho do vetor:");
         N = tec.nextInt();
     
-        int [] vet = new int [N];
+        int [] vetor = new int [N];
         
         for (int i = 0; i <N; i++) {
             System.out.print("valor "+(i+1)+ " do vetor.");
             int valor = tec.nextInt();
-            vet[i] = valor;
+            vetor[i] = valor;
         }
 
-        q1.quick(vet, 0, N - 1);
+        q1.quick(vetor, 0, N - 1);
 
-        for (int i = 0; i < vet.length; i++) {
-            System.out.print("valores ordenado : " + vet[i]);
+        for (int i = 0; i < vetor.length; i++) {
+            System.out.print("valores ordenado : " + vetor[i]);
         }
 
     }

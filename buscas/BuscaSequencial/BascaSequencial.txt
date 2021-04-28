@@ -1,0 +1,5 @@
+Busca sequencial:
+
+Percorra lista(ou vetor) comparando o valor de busca com o valor do elemento em cada posição,
+se a valor foi igual a algum elementos, retorna a posição; 
+

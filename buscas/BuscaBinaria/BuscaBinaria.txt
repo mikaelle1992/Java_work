@@ -1,0 +1,5 @@
+Busca Binaria:
+
+busca para encontrar um item em uma lista(ou vetor) ordenado
+ onde  é dividido pela metade a porção da lista que deve conter 
+o item procurado , assim reduzindo o tempo de busca no algoritmo.

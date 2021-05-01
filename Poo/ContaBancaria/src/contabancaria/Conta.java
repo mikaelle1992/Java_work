@@ -5,8 +5,37 @@ public class Conta {
     private String tipo;
     private String dono;
     private int saldo;
-    private String status;
+    private boolean status;
 
+     public Conta( ){
+      this.saldo = 0;
+      this.status = false;
+    }
+    
+    public void AbrirConta(String tipo,String dono){
+        
+        if(tipo == "poupança"){
+            this.saldo = 100;
+        }else if(tipo == "corrente"){
+            
+        }else{
+            System.out.println("Operação invalida!");
+        }
+      this.dono = dono;  
+    }
+    
+      public void FecharConta(){
+        
+    }
+    
+     public void Depositar(){
+        
+    } 
+     
+     public void Sacar(){
+        
+    }
+     
     /**
      * @return the numConta
      */
@@ -66,16 +95,18 @@ public class Conta {
     /**
      * @return the status
      */
-    public String getStatus() {
+    public boolean isStatus() {
         return status;
     }
 
     /**
      * @param status the status to set
      */
-    public void setStatus(String status) {
+    public void setStatus(boolean status) {
         this.status = status;
     }
+
+   
     
     
 }

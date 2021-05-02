@@ -9,9 +9,9 @@ public class ContaBancaria {
         conta1.AbrirConta("poupança");
          conta1.setNumConta(123456);
          conta1.setDono("mikaelle rubia pinheiro");
-         conta1.Depositar(20);
          conta1.StatusConta();
-         
+         System.out.println();
+         conta1.Depositar(20);
          conta1.Sacar(50);
          
         System.out.println("Saldo " + conta1.getSaldo()); 
@@ -23,8 +23,9 @@ public class ContaBancaria {
          conta2.AbrirConta("corrente");
          conta2.setNumConta(123445);
          conta2.setDono("Pedro Santos");
-         conta2.Depositar(550);
          conta2.StatusConta();
+         System.out.println();
+         conta2.Depositar(550);
          
          conta2.FecharConta();
     } 

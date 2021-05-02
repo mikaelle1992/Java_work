@@ -5,7 +5,7 @@ public class Conta {
     private int numConta;
     private String tipo;
     private String dono;
-    private int saldo;
+    private float saldo;
     private boolean status;
 
     public Conta() {
@@ -62,12 +62,12 @@ public class Conta {
         }
     }
      public void pagarMensal(){
-         int v =0;
+         float v =0;
          if (isStatus() == true) {
             if (getTipo() == "poupança") {
-                v = 15;
+                v = 15f;
         }else if (getTipo() == "corrente"){
-                v = 10;
+                v = 10f;
            }
         if(getSaldo() > v || getSaldo() == v){
             setSaldo(getSaldo() - v);
@@ -123,14 +123,14 @@ public class Conta {
     /**
      * @return the saldo
      */
-    public int getSaldo() {
+    public float getSaldo() {
         return saldo;
     }
 
     /**
      * @param saldo the saldo to set
      */
-    public void setSaldo(int saldo) {
+    public void setSaldo(float saldo) {
         this.saldo = saldo;
     }
 

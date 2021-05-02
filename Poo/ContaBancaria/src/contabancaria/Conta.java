@@ -1,41 +1,83 @@
 package contabancaria;
 
 public class Conta {
+
     private int numConta;
     private String tipo;
     private String dono;
     private int saldo;
     private boolean status;
 
-     public Conta( ){
-      this.saldo = 0;
-      this.status = false;
+    public Conta() {
+        this.saldo = 0;
+        this.status = false;
     }
-    
-    public void AbrirConta(String tipo,String dono){
-        
-        if(tipo == "poupança"){
+
+    public void AbrirConta(String tipo) {
+        setTipo(tipo);
+        setStatus(true);
+
+        if (tipo == "poupança") {
             this.saldo = 100;
-        }else if(tipo == "corrente"){
-            
-        }else{
+        } else if (tipo == "corrente") {
+            this.saldo = 50;
+        } else {
             System.out.println("Operação invalida!");
         }
-      this.dono = dono;  
+
     }
-    
-      public void FecharConta(){
+
+    public void FecharConta() {
         
+        if (this.saldo > 0) {
+            System.out.println("Saldo em Conta, por favor saque o valor da conta para finalizar");
+
+        } else if (this.saldo < 0) {
+            System.out.println("Conta em Débito ");
+        } else {
+            setStatus(false);
+            System.out.println("Conta encerrada");
+        }
     }
-    
-     public void Depositar(){
-        
-    } 
-     
-     public void Sacar(){
-        
+
+    public void Depositar(int valor) {
+        if (isStatus() == true) {
+            setSaldo(getSaldo() + valor);
+            System.out.println("Deposito realizado com sucesso");
+        } else {
+            System.out.println("Impossivel Depositar");
+        }
     }
-     
+
+    public void Sacar(int valor) {
+        if (isStatus() == true) {
+            if (getSaldo() == valor || getSaldo() > valor) {
+                setSaldo(getSaldo() - valor);
+                System.out.println("saque realizado com sucesso");
+            }else{
+                System.out.println("Saldo insuficiente");
+            }
+        }else{
+            System.out.println("Conta inativa");
+        }
+    }
+     public void pagarMensal(){
+         int v =0;
+         if (isStatus() == true) {
+            if (getTipo() == "poupança") {
+                v = 15;
+        }else if (getTipo() == "corrente"){
+                v = 10;
+           }
+        if(getSaldo() > v || getSaldo() == v){
+            setSaldo(getSaldo() - v);
+            System.out.println("Mensalidade paga");
+        }    
+        }else{
+            System.out.println("Conta inativa");
+        }
+     }
+
     /**
      * @return the numConta
      */
@@ -105,8 +147,9 @@ public class Conta {
     public void setStatus(boolean status) {
         this.status = status;
     }
-
-   
     
+    public void StatusConta(){
+        System.out.println("Numero da conta : " +this.numConta + " \nDono : " + this.dono + " \nTipo: " + this.tipo + " \nSaldo: " + this.saldo + "\nStatus:" + this.status);
+    }
     
 }

@@ -7,11 +7,20 @@ package relacionclass;
  */
 public class RelacionClass {
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String[] args) {
-        // TODO code application logic here
+       Lutador lut[] = new Lutador [6];
+        lut[0] = new Lutador("Pretty Boy", " Portugal", 29, 1.80f, 67.9f, 10, 3, 2);
+        lut[1] = new Lutador("Chaves", " México", 33, 1.78f, 75.7f, 8, 2, 4);
+        lut[2] = new Lutador("Godzilla", " Grécia", 27, 1.82f, 71.3f, 8, 2, 4);
+        lut[3] = new Lutador("Kong", " Brasil", 32, 1.69f, 81.9f, 8, 2, 4);
+        lut[4] = new Lutador("Narut", " África", 28, 1.70f, 97.8f, 8, 2, 4);
+        lut[5] = new Lutador("Puts", " Paraguai", 28, 1.87f, 102.5f, 8, 2, 4);
+       
+       for(int i = 0; i <lut.length;i ++){
+            lut[i].apresentar();
+            lut[i].status();
+       }
     }
     
 }

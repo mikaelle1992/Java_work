@@ -21,6 +21,14 @@ public class RelacionClass {
             lut[i].apresentar();
             lut[i].status();
        }
+       
+       Luta UEC1 = new Luta();
+       UEC1.marcarLuta(lut[1], lut[2]);
+       UEC1.lutar();
+       
+       Luta UEC2 = new Luta();
+       UEC2.marcarLuta(lut[1], lut[1]);
+       UEC2.lutar();
     }
     
 }

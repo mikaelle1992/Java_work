@@ -24,7 +24,7 @@ public class Lutador {
     }
     
     public void apresentar(){
-        System.out.println("-------------------------------------------------");
+        System.out.println("----------------------------------");
         System.out.println("Apresentamos o Lutador: "+ getNome());
         System.out.println("Diretamente de " + getNacionalidade() + "\nCom " +getIdade() + "anos." );
         System.out.println(getAltura() +  " m de altura ");
@@ -36,7 +36,7 @@ public class Lutador {
     }
     
       public void status(){
-          System.out.println("-------------------------------------------------");
+          System.out.println("----------------------------------");
           System.out.println(getNome() + " É peso " + getCategoria());
           System.out.println(getVitoria( ) + " Vitórias");
           System.out.println(getDerrotas() + " Derrotas ");
@@ -117,7 +117,7 @@ public class Lutador {
 
     /**
      * @param peso the peso to set
-     */
+     */ 
     public void setPeso(float peso) {
         this.peso = peso;
         this.setCategoria();

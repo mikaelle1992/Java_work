@@ -15,11 +15,12 @@ public class Livro implements Publicacao{
         this.totPagina = totPagina;
         this.leitor = leitor;
         this.aberto = false;
+        this.pagAtual = 0;
     }
 
     @Override
     public String toString() {
-        return "Livro{" + "titulo=" + titulo + ", autor=" + autor + ", totPagina=" + totPagina + ", pagAtual=" + pagAtual + ", aberto=" + aberto + ", leitor=" + leitor + '}';
+        return "Livro{" + "titulo=" + titulo + ", autor=" + autor + ", totPagina=" + totPagina + ", pagAtual=" + pagAtual + ", aberto=" + aberto + ", leitor=" + leitor.getNome() + '}';
     }
 
     
@@ -119,18 +120,40 @@ public class Livro implements Publicacao{
     }
 
     @Override
-    public void folhear() {
-     
+    public void folhear(int p ) {
+        if(this.aberto){
+            if(p <= this.getTotPagina()){
+                this.pagAtual = p;
+            }else{
+                System.out.println("essa pagina nao existe");
+            }
+             
+        }else{
+            System.out.println("Livro fechado, abra o livro pra Folhear");
+        }
+    
     }
 
     @Override
-    public void avantarPag() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public void avancarPag() {
+         if(this.aberto){
+             this.pagAtual ++;
+        }else{
+            System.out.println("Livro fechado, abra o livro pra avançar a pagina");
+        }
+        
     }
 
     @Override
     public void voltarPag() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
+         if(this.aberto){
+             this.pagAtual --;
+        }else{
+            System.out.println("Livro fechado, abra o livro pra avançar a pagina");
+        }
+
+       
     }
     
 }
